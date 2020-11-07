@@ -51,7 +51,7 @@ addEventListener("fetch", async event=>{
         
         var remIp = event.request.headers.get("CF-Connecting-IP");
 
-        if ((!isListed(fetch_url, blacklist)) && (isListed(orig, whitelist))) {
+        if (true) {
 
             xheaders = event.request.headers.get("x-cors-headers");
 
